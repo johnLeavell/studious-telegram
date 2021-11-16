@@ -5,5 +5,6 @@ const router = Router();
 
 // User endpoints
 router.post("/api/users", userController.create);
+router.get("./api/user/:id", userController.getUserById);
 
 module.exports = router;
